@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
-
+import java.util.Random;
 /**
  * A class that models playing card Objects. Cards have 
  * a value (note that Ace = 1, Jack =11, Queen =12, King = 13)
@@ -53,5 +53,16 @@ public class Card {
     }
    
    //add two random methods to generate value and suits
+    public int randomValue()
+    {
+        int number=(int)(Math.random()* 13+1);
+        return number;
+    }
+      public int randomSuit()
+    {
+        int number=(int)(Math.random()* 3+0);
+        return number;
+    }
+   
     
 }
