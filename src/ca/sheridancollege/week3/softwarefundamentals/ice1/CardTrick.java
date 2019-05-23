@@ -19,7 +19,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
     {
         Card[] magicHand = new Card[7];
         // added in Github for ICE1
-        Card luckyCard = new Card; 
+        Card luckyCard = new Card(); 
         
         luckyCard.setValue(3);
         luckyCard.setSuit("Diamonds");
