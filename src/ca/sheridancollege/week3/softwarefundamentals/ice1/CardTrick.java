@@ -18,6 +18,11 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
+        // added in Github for ICE1
+        Card luckyCard = new Card; 
+        
+        luckyCard.setValue(3);
+        luckyCard.setSuit("Diamonds");
         
         for (int i=0; i<magicHand.length; i++)
         {
@@ -32,13 +37,17 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
         
         //insert code to ask the user for Card value and suit, create their card
         Card u = new Card();
-        Scanner inputObj = new Scanner(System.in);
-        System.out.println("Please enter your card value: ");
-                
-        u.setValue(inputObj.nextInt());
-        System.out.println("Please enter your suit \"Hearts\", \"Diamonds\", \"Spades\", \"Clubs\": ");
+        u.setValue(luckyCard.getValue());
+        u.setSuit(luckyCard.getSuit());
         
-        u.setSuit(inputObj.next());
+        
+        // Scanner inputObj = new Scanner(System.in);
+        // System.out.println("Please enter your card value: ");
+                
+        // u.setValue(inputObj.nextInt());
+        // System.out.println("Please enter your suit \"Hearts\", \"Diamonds\", \"Spades\", \"Clubs\": ");
+        
+        // u.setSuit(inputObj.next());
         
         // and ssarch magicHand here
         boolean found = false;
