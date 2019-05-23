@@ -12,8 +12,8 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * @author macdojer
  */
 
-import java.util.Scanner;
-        public class CardTrick {
+    import java.util.Scanner;
+    public class CardTrick {
     
     public static void main(String[] args)
     {
@@ -23,16 +23,37 @@ import java.util.Scanner;
         {
             Card c = new Card();
             
-            c.setValue(c.genValue());
-            //c.setValue(insert call to random number generator here)
-            c.setSuit(c.genSuits());
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setValue(c.randomVal());
+            c.setSuit(c.SUITS[c.randomSuit()]);
+            magicHand[i] = c;
+            System.out.println(magicHand[i].getSuit()+magicHand[i].getValue());
+            
         }
         
         //insert code to ask the user for Card value and suit, create their card
+        Card u = new Card();
+        Scanner inputObj = new Scanner(System.in);
+        System.out.println("Please enter your card value: ");
+                
+        u.setValue(inputObj.nextInt());
+        System.out.println("Please enter your suit \"Hearts\", \"Diamonds\", \"Spades\", \"Clubs\": ");
         
-        // and search magicHand here
-        //Then report the result here
+        u.setSuit(inputObj.next());
+        
+        // and ssarch magicHand here
+        boolean found = false;
+        for (int i=0; i<magicHand.length; i++) {
+            if (magicHand[i].getSuit().equals(u.getSuit()) && magicHand[i].getValue()== u.getValue()) {
+                found = true;
+            }
+        }
+        
+         //Then report the result here
+        if (found) {
+            System.out.println("We found your card!");
+        }
+                
+       
     }
     
 }

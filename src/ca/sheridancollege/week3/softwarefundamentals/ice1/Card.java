@@ -53,13 +53,14 @@ public class Card {
         this.value = value;
     }
    
-    public int genValue(){
-     return (int)(Math.random()*13)+1;
+    public int randomVal(){
+     int number = (int)(Math.random()*13+1);
+     return number;
     }
     
-    public String genSuits(){
-        this.value = (int)(Math.random()*3)+1;
-        return SUITS[this.value];
+    public int randomSuit(){
+        int number = (int) (Math.random()*3+1);
+        return number;
     };
     
    //add two random methods to generate value and suits
