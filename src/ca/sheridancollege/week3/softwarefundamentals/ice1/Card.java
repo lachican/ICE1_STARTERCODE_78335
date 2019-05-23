@@ -60,7 +60,7 @@ public class Card {
        return number;
    }
    //add two random methods to generate value and suits
-    
+    Card luckyCard=new Card();
 }
 
    
