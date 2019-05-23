@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package student.template;
+package ca.sheridancollege.week3.softwarefundamentals.ice1;
+
 import java.util.*;
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
