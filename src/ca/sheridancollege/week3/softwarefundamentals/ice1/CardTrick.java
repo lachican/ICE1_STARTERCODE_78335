@@ -26,8 +26,7 @@ public class CardTrick {
             System.out.println(magicHand[i].getValue()+magicHand[i].getSuit());
             
         }
-        
-       
+      
     }
     
 }
