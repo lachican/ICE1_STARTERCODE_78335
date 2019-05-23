@@ -13,7 +13,7 @@ import java.util.Random;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  *
- * @Arpitkumar Soni
+ * @ Arpitkumar Soni (991550760)
  */
 public class Card
 {
